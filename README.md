@@ -1,3 +1,1 @@
 # coreygaspar.github.io
-
-Greetings
