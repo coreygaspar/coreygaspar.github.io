@@ -72,6 +72,7 @@ I also added an early-stopping check. The program checks the agent’s win rate 
 
 ## Course Outcomes
 I was able to meet the course outcome below:
+
 **Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.**
 
 This enhancement supports the outcome because I improved and tested the Q-training algorithm to solve the pirate’s pathfinding problem. I had to understand how the model, target network, experience replay, and the agent’s actions worked together.
