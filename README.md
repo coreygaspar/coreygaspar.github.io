@@ -21,3 +21,33 @@ Finally, security has become another skill that I have developed from this progr
 
 ## Code Review
 [Click here to view my code review](https://drive.google.com/file/d/15FX3ki2ujTkb_hB412PzoKDNIRw0Utbg/view?usp=sharing)
+
+<br>
+
+# Enhancement One: Software Design and Engineering
+
+## Description
+The artifact I selected is my Travlr Getaways web application, which I originally built throughout the CS-465 course. The application allows users to view travel information, while authenticated users can add and edit trips. The application uses Angular for the front end, Express and Node.js for the backend, and MongoDB with Mongoose for data storage.
+
+For my CS-499 enhancement, I added the ability to delete trips. This completed the main CRUD functionality for the trip data by allowing authorized users to create, read, update, and delete trips.
+
+## Justification
+I included the Travlr Getaways application because it demonstrates several software development skills that I have gained during my time in the Computer Science program. The artifact includes a frontend application, backend API, database, authentication methods, and communication between all of the different parts of the application.
+
+The original application already allowed users to add, view, and edit trips. The enhancement added the missing delete operation. I added a delete method to the Angular trip data service, a delete endpoint to the Express API, and a Delete Trip button to the trip cards. The button is only able to appear if the user is signed in. I also added a confirmation prompt so that a user has to confirm before a trip is removed, which reduces the possibility of a trip accidentally being removed.
+
+This enhancement improved the application by making the trip management functionality more complete. It also gave me experience working across the frontend and backend instead of treating the enhancement as its own isolated change. I had to make sure the frontend request, API route, controller, and database all worked together as expected.
+
+## Course Outcomes
+I met the course outcomes that I planned to address with this enhancement in Module One. The main outcome supported by this enhancement is demonstrating the ability to use well-founded techniques, skills, and tools to implement computer solutions that provide value and accomplish software development goals.
+
+The enhancement also supports the security mindset outcome. The delete operation is protected by the existing JWT authentication token, meaning an unauthenticated user can’t manage trips. This made it clearer as to why security should also be considered, rather than just focusing on if the feature works.
+
+My outcome-coverage plan still hasn’t changed. I still plan to use the Travlr Getaways artifact to demonstrate software engineering and design skills while also addressing security and database concepts through other enhancements planned for the project. I still have another use for this project later on.
+
+## Reflection
+This enhancement taught me more about how the different parts of a web application work together. I had to make sure the button on the website connected to the back end and that the back end could remove the trip from the database. I also learned that I didn’t have to add a new delete component. My TripDataService already had the functionality planned for deleting a trip. All I needed to do was build out that functionality and connect the different parts of the application.
+
+One of the main challenges was making the enhancement without breaking the functionality that was already working. I had to work with the existing structure of the application and make specific changes rather than rewriting existing code. I ran into an issue where my application ran into a 404 error when trying to sign in. I accidentally removed the “login” and “register” functions which is why I ran into that issue. Testing after each change helped me confirm that authentication and existing functionality continued to work.
+
+I also learned more about the importance of testing an enhancement from the user’s perspective. The delete button needed to call the correct API endpoint, the API needed to find the correct trip, and the database needed to remove the trip. Adding a confirmation prompt was also useful for preventing accidental deletion.
