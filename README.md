@@ -58,6 +58,33 @@ I also learned more about the importance of testing an enhancement from the user
 
 # Enhancement Two: Algorithms and Data Structure
 
+## Description
+The artifact I selected for this milestone is the Pirate Intelligent Agent from CS-370. It is a Python program that uses a deep Q-learning algorithm to train a pirate agent to navigate an 8x8 maze and reach the treasure at the bottom of the grid. The original project uses Python, TensorFlow, and Keras within a Jupyter Notebook environment, as well as experience replay to train the agent.
+
+For my CS-499 enhancement, I improved the Q-training process by adding a target network and an early-stopping check. I also fixed the testing process so the agent only chooses valid actions when the completion check is running.
+
+## Reasoning
+I selected this artifact because it demonstrates my ability to work with algorithms and apply changes to an existing program. The artifact uses deep Q-learning, experience replay, and Q-values to help the agent learn how to move through the maze.
+
+My original plan was to improve the efficiency of the training process by lowering the exploration rate over time and adding early stopping. As I worked on the enhancement, I changed part of the plan and added a target network instead. The target network is updated every 50 epochs using the weights from the main model. This gave the training process a more stable target while the agent learned.
+
+I also added an early-stopping check. The program checks the agent’s win rate during training and runs a completion check when the win rate reaches 100%. If the agent can complete the maze consistently over and over, then training stops successfully.
+
+## Course Outcomes
+I was able to meet the course outcome below:
+**Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.**
+
+This enhancement supports the outcome because I improved and tested the Q-training algorithm to solve the pirate’s pathfinding problem. I had to understand how the model, target network, experience replay, and the agent’s actions worked together.
+
+I also had to make changes based on the results of my testing. The completion check problem showed me that improving one part of the program can introduce new issues to other parts of the system. After fixing the valid-action logic, the program was able to correctly test the trained agent and stop training when the completion check passed. My outcome-coverage plan has not changed after this enhancement. This artifact is a good representation of my skills in algorithms, problem solving, testing, and evaluating a computing solution.
+  
+## Reflection
+When enhancing this artifact, I learned more about how Q-learning works and how the different parts of the training process work together. Adding the target network helped me understand how using a separate network can make the training process more stable. I also learned that testing the algorithm is crucial to its success.
+  
+One of the biggest challenges was getting the process running in my current environment. Previously, I had this running in a virtual machine with the packages and software preconfigured. I had to install the correct version of Python and several other packages before I could test my changes.
+
+Another challenge happened when the agent reached a 100% win rate but continued training. I had to look through the completion check to find the problem. I found that the testing function was choosing the highest Q-value without checking if the action the agent took was valid. I changed it so that the agent only chooses valid actions during the test. After this change was made, the completion check worked, the training stopped early without having to run through all 1,000 episodes, and the agent found its way to the treasure.
+
 ## Repository
 
 <br>
