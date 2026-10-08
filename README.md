@@ -50,3 +50,20 @@ This enhancement taught me more about how the different parts of a web applicati
 One of the main challenges was making the enhancement without breaking the functionality that was already working. I had to work with the existing structure of the application and make specific changes rather than rewriting existing code. I ran into an issue where my application ran into a 404 error when trying to sign in. I accidentally removed the “login” and “register” functions which is why I ran into that issue. Testing after each change helped me confirm that authentication and existing functionality continued to work.
 
 I also learned more about the importance of testing an enhancement from the user’s perspective. The delete button needed to call the correct API endpoint, the API needed to find the correct trip, and the database needed to remove the trip. Adding a confirmation prompt was also useful for preventing accidental deletion.
+
+## Repository
+[Enhancement One Repository](https://github.com/coreygaspar/Enhancement-One-CS499)
+
+<br>
+
+# Enhancement Two: Algorithms and Data Structure
+
+## Repository
+
+<br>
+
+# Enhancement Three: Databases
+
+## Repository
+
+
