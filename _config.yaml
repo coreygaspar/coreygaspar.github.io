@@ -1,3 +1,5 @@
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
 title: Corey Gaspar - CS 499 ePortfolio
 description: This is my GitHub Page containing my ePortfolio!
