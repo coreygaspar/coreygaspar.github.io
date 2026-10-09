@@ -92,6 +92,23 @@ Another challenge happened when the agent reached a 100% win rate but continued 
 
 # Enhancement Three: Databases
 
+## Description
+The artifact I selected for the database category is the Travlr Getaways app, which I created during my time in CS-456. The application uses MongoDB and Mongoose to store and manage travel information. It also has an Angular front end and an Express API that allow the users to view, add, edit, and delete trips. In this improvement, I enhanced the working of the database of the application by adding a rating system that allows users with access to give a rating from 1 to 5 stars to trips.
+
+## Justification
+I chose this artifact because it shows my ability to work with databases and see the connection between databases and other components of the web application. The initial version of the app already offered users the ability to view, add, edit, and delete trips. With that, adding the trip rating functionality allowed me to build on the existing capabilities of the application.
+This enhancement added a rating field to the trip database and allowed users to submit ratings from 1 to 5 stars. I also had to make changes to the API and front end so that ratings could be submitted, validated, and displayed. This allowed me to add new features while making sure that the existing features remained untouched.
+
+## Course Outcomes
+I met the outcomes I planned to address with this enhancement. I was able to build on my database and software development skills while also considering security. For example, I had to make sure ratings were validated before being saved to the database. I also kept the rating functionality behind authentication so that only logged-in users could submit ratings.
+
+My plans for covering the course outcomes have not changed. This enhancement gave me another opportunity to demonstrate how different parts of an application work together to support new functionality.
+
+## Reflection
+Working on this enhancement helped me better understand how the different parts of a web application connect to the database. I learned that there is more to adding a new feature than just updating the database. I also had to update the API, controller, service, and front end to make sure the rating functionality worked correctly. One challenge I faced was making sure the ratings were properly validated and that the updated rating was returned and displayed on the front end. I also ran into an Angular template error while working on the rating interface.
+
+Overall, this enhancement gave me more experience with working with an existing application and adding functionality without changing preexisting functionality. It also helped me understand why validating data is so important and how to maintain authentication when adding new features. These skills will become useful as I progress through the rest of this course and into my career.
+
 ## Repository
 
 
