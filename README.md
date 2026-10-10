@@ -87,6 +87,7 @@ One of the biggest challenges was getting the process running in my current envi
 Another challenge happened when the agent reached a 100% win rate but continued training. I had to look through the completion check to find the problem. I found that the testing function was choosing the highest Q-value without checking if the action the agent took was valid. I changed it so that the agent only chooses valid actions during the test. After this change was made, the completion check worked, the training stopped early without having to run through all 1,000 episodes, and the agent found its way to the treasure.
 
 ## Repository
+[Enhancement Two Repository](https://github.com/coreygaspar/Enhancement-Two-CS499)
 
 <br>
 
