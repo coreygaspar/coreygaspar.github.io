@@ -51,7 +51,10 @@ One of the main challenges was making the enhancement without breaking the funct
 
 I also learned more about the importance of testing an enhancement from the user’s perspective. The delete button needed to call the correct API endpoint, the API needed to find the correct trip, and the database needed to remove the trip. Adding a confirmation prompt was also useful for preventing accidental deletion.
 
-## Repository
+## Original Project
+[Original Project Pre-Enhancement](https://github.com/coreygaspar/cs465-fullstack)
+
+## Enhanced Repository
 [Enhancement One Repository](https://github.com/coreygaspar/Enhancement-One-CS499)
 
 <br>
@@ -86,7 +89,10 @@ One of the biggest challenges was getting the process running in my current envi
 
 Another challenge happened when the agent reached a 100% win rate but continued training. I had to look through the completion check to find the problem. I found that the testing function was choosing the highest Q-value without checking if the action the agent took was valid. I changed it so that the agent only chooses valid actions during the test. After this change was made, the completion check worked, the training stopped early without having to run through all 1,000 episodes, and the agent found its way to the treasure.
 
-## Repository
+## Original Project
+[Original Project Pre-Enhancement](https://github.com/coreygaspar/SNHU-CS370-Coursework/tree/main/Module%207)
+
+## Enhanced Repository
 [Enhancement Two Repository](https://github.com/coreygaspar/Enhancement-Two-CS499)
 
 <br>
@@ -110,6 +116,12 @@ Working on this enhancement helped me better understand how the different parts 
 
 Overall, this enhancement gave me more experience with working with an existing application and adding functionality without changing preexisting functionality. It also helped me understand why validating data is so important and how to maintain authentication when adding new features. These skills will become useful as I progress through the rest of this course and into my career.
 
-## Repository
+## Original Project
+[Original Project Pre-Enhancement](https://github.com/coreygaspar/cs465-fullstack)
+
+## Enhanced Repository
 [Enhancement Three Repository](https://github.com/coreygaspar/Enhancement-Three-CS499)
+
+<br>
+
 
